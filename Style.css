@@ -1,1 +1,26 @@
+.continer1 {
+	margin: red;
+	padding: 10px 10px;
+	border: 2px solid red;
+}
 
+.continer2 {
+	padding: 10px 10px;
+	border: 2px solid red;
+}
+
+button {
+	background-color: #90EE90;
+	padding: 15px 32px;
+	margin: 5px 10px;
+	cursor: pointer;
+	border: 2px solid #000;
+	border-radius: 4px;
+} 
+
+input[type=text],select {
+	width: 20%;
+	border: 2px solid #000;
+	border-radius: 5px;
+	background-color: #ADFF2F;
+}

@@ -7,3 +7,13 @@ function addText() {
 	liNode.appendChild(textNode);
 	listNode.appendChild(liNode);
 }
+
+function findWord() {
+	var x;
+	var y = "";
+	listNode = document.getElementById('list');
+	for (x in listNode) {
+		y += x + "<br>";
+	}
+	document.getElementById("demo").innerHTML = y;
+}
