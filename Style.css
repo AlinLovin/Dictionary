@@ -1,16 +1,15 @@
-.continer1 {
-	margin: red;
-	padding: 10px 10px;
-	border: 2px solid red;
+.add {
+	padding: 20px;
+	border: 2px solid teal;
 }
 
-.continer2 {
-	padding: 10px 10px;
-	border: 2px solid red;
+.find {
+	padding: 20px;
+	border: 2px solid teal;
 }
 
 button {
-	background-color: #90EE90;
+	background-color: #2196F3;
 	padding: 15px 32px;
 	margin: 5px 10px;
 	cursor: pointer;
@@ -22,5 +21,44 @@ input[type=text],select {
 	width: 20%;
 	border: 2px solid #000;
 	border-radius: 5px;
-	background-color: #ADFF2F;
+	background-color: #f1f1f1;
+}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }

@@ -3,26 +3,30 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
     <title>Dictionary</title>
   </head>
   <body>
-    <p id="demo"></p>
 
-    <div class="continer1">
-      <input type="text" id="textList">
+    <div class="add">
+      <input type="text" id="textList" placeholder="Add..">
       <button onclick="addText()">Add</button>
 
-      <ul id="list">
-        <li>car</li>
-        <li>dog</li>
-        <li>home</li>
-      </ul>
+      <h1>Dictionary</h1>
+
+      <ul id="list"></ul>
     </div>
 
-    <div class="continer2">
-      <input type="text" id="textList">
-      <button onclick="findWord()">Find word</button>
+    <div class="find">
+      <input type="text" id="findText" placeholder="Search..">
+      <button onclick="checkWord()">Find word</button>
+      <p id="demo"></p>
     </div>
+
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+      <input type="text" id="erf" placeholder="Search.." name="search2">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
   </body>
 </html>
