@@ -20,8 +20,8 @@ function checkWord() {
  	var checkWord = str.find(findWord);
  	var word = document.getElementById("findText").value;
  	if (checkWord != null) {
- 		document.getElementById("demo").innerHTML = 'The word "' + word + '" exists in the dictionary!';
+ 		document.getElementById("answer").innerHTML = 'The word "' + word + '" exists in the dictionary!';
  	} else {
- 		document.getElementById("demo").innerHTML = 'The word "' + word + '" does not exist in the dictionary!';
+ 		document.getElementById("answer").innerHTML = 'The word "' + word + '" does not exist in the dictionary!';
  	}
 }

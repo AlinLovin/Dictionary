@@ -4,29 +4,27 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="script.js"></script>
+    
     <title>Dictionary</title>
   </head>
   <body>
 
     <div class="add">
       <input type="text" id="textList" placeholder="Add..">
-      <button onclick="addText()">Add</button>
+      <button class="button" onclick="addText()">Add</button>
 
       <h1>Dictionary</h1>
 
       <ul id="list"></ul>
     </div>
 
-    <div class="find">
+    <div class="search">
       <input type="text" id="findText" placeholder="Search..">
-      <button onclick="checkWord()">Find word</button>
-      <p id="demo"></p>
+      <button type="submit"class="button" onclick="checkWord()"><i class="fa fa-search"></i></button>
+      
+      <p id="answer"></p>
     </div>
-
-    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-      <input type="text" id="erf" placeholder="Search.." name="search2">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
   </body>
 </html>
