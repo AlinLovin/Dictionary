@@ -1,15 +1,13 @@
-var str = [];
+var listOfDictionary = [];
 
 function addText() {
-	var textVal = document.getElementById('textList').value,
-		listNode = document.getElementById('list'),
-		liNode = document.createElement("LI"),
-		textNode = document.createTextNode(textVal);
-
+	var textValue = document.getElementById('textList').value;
+	var listNode = document.getElementById('list');
+	var liNode = document.createElement("LI");
+	var textNode = document.createTextNode(textValue);
 	liNode.appendChild(textNode);
 	listNode.appendChild(liNode); 
-		
-	str.push(textVal);
+	listOfDictionary.push(textValue);
 }
 
 function findWord(word) {
@@ -17,11 +15,11 @@ function findWord(word) {
 }
 
 function checkWord() {
- 	var checkWord = str.find(findWord);
+ 	var checkWord = listOfDictionary.find(findWord);
  	var word = document.getElementById("findText").value;
  	if (checkWord != null) {
- 		document.getElementById("answer").innerHTML = 'The word "' + word + '" exists in the dictionary!';
+ 		document.getElementById("displayAnswer").innerHTML = 'The word "' + word + '" exists in the dictionary!';
  	} else {
- 		document.getElementById("answer").innerHTML = 'The word "' + word + '" does not exist in the dictionary!';
+ 		document.getElementById("displayAnswer").innerHTML = 'The word "' + word + '" does not exist in the dictionary!';
  	}
 }
